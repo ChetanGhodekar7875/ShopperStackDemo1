@@ -8,7 +8,7 @@
         <methods>
           <include name="addProductToTheCart"/>
           <include name="launchApplication"/>
-          <include name="loginMethod"/>
+          <include name="loginMethod" invocation-numbers="0"/>
           <include name="closeApplication"/>
         </methods>
       </class> <!-- Util.AddProductToTheCart_Test -->

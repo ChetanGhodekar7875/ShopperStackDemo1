@@ -6,7 +6,7 @@
     <classes>
       <class name="Util.RegisterPage_Test">
         <methods>
-          <include name="enterData" invocation-numbers="0"/>
+          <include name="enterData" invocation-numbers="0 1"/>
           <include name="launchApplication"/>
           <include name="closeApplication"/>
         </methods>

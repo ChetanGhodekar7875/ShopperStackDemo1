@@ -1,5 +1,6 @@
 package Util;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.ss.usermodel.Sheet;
@@ -33,11 +34,13 @@ public class RegisterPage_Test extends BaseClass{
 				registerData[i][j]=s.getRow(i).getCell(j).toString();
 			}
 		}
+		System.out.println(Arrays.toString(registerData));
 		return registerData;	
 	}
 	
 	@Test(dataProvider = "data")
 	public void enterData(String[] temp) throws InterruptedException {
+		System.out.println(Arrays.toString(temp));
 		HomePagePom homePage=new HomePagePom(webDriver);
 		webDriver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		homePage.getWelcomeMesaage().isDisplayed();
