@@ -20,7 +20,7 @@ public class BaseClass {
 protected WebDriver webDriver;
 protected ExtentReports extent;
 protected ExtentTest test;
-	
+//hi	
 	@Parameters("bName")
 	@BeforeClass
 	public void launchApplication(String bname) throws InterruptedException {
